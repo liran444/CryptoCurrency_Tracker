@@ -44,6 +44,7 @@ CryptoCurrency Tracker SPA, that relies heavily on jQuery and Ajax (RESTful API)
 ![mobileFriendly1](./mobileFriendly1.png)
 
 ### Live Reports / Data Feed on selected coins:
+* You are able to toggle between show/hide by clicking on their names at the top of the graph
 ![liveReportsFeed](./liveReportsFeed.png)
 
 ### Examples of Error / Message Handling with Modal:
