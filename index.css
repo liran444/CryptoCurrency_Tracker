@@ -1,0 +1,211 @@
+.parallax {
+  /* The image used */
+  background-image: url("./media/395434.jpg");
+  padding: 7rem;
+  height: 30%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  /* Turn off parallax scrolling for all tablets and phones. */
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .card {
+    min-width: 220px !important;
+    max-width: 220px !important;
+  }
+}
+
+#aboutSection {
+  display: none;
+  margin-top: 3%;
+}
+
+.aboutMeInfo {
+  font-weight: 600;
+}
+
+.chartContainer {
+  display: none;
+  height: 32rem;
+  width: 100%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.reportsLoader {
+  position: absolute;
+}
+
+.searchResultDiv {
+  width: 23rem;
+  border: 6px solid blue;
+}
+
+h5 {
+  font-weight: 700;
+}
+
+.containerDiv {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3%;
+}
+
+.card {
+  margin: 1%;
+  min-width: 20rem;
+  min-height: 14rem;
+  max-height: 13.2rem;
+}
+
+.card-body {
+  overflow-wrap: break-word;
+}
+
+p {
+  margin-bottom: 0.8rem;
+}
+
+.nameClass {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.coinValuesSpan {
+  display: block;
+  font-weight: 600;
+}
+
+.coinLogo {
+  bottom: 4rem;
+  position: relative;
+  float: right;
+  left: 15px;
+}
+
+.showMoreInfoButton {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.errorClass {
+  color: red;
+  font-size: 2rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: aqua;
+}
+
+.nav-item button:hover {
+  color: orange !important;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.switch {
+  position: absolute;
+  right: 3%;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.modalSwitch {
+  position: relative;
+  margin: 3%;
+  display: flex;
+  width: 60px;
+  height: 34px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.modal-body {
+  font-weight: 600;
+}
+
+.row {
+  margin: 0.5rem;
+}
+
+.col-9 {
+  margin-top: 1rem;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

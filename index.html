@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyptocurrency Tracker</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body class="bg-light">
+    <!-- Parallax Header Div -->
+    <div class="parallax"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarToggler"
+        aria-controls="navbarToggler"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <a class="navbar-brand" href="#">CryptoDigger</a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <button id="homeButton" class="btn nav-link">Home</button>
+          </li>
+          <li id="navItemReports" class="nav-item">
+            <button id="liveReportsButton" class="btn nav-link" disabled>
+              Live Reports
+            </button>
+          </li>
+          <li class="nav-item">
+            <button id="aboutButton" class="btn nav-link" disabled>
+              About
+            </button>
+          </li>
+          <li class="nav-item">
+            <button id="viewCheckedCoinsButton" class="btn nav-link" disabled>
+              View Checked Coins
+            </button>
+          </li>
+        </ul>
+
+        <!-- Search Form -->
+        <form id="searchForm" class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            id="searchInput"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button
+            id="searchButton"
+            class="btn btn-outline-success my-2 my-sm-0"
+          >
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalHeader"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalHeader"></h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div id="modalBody" class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The About Section -->
+    <section id="aboutSection" class="section py-5 bottom-slant-gray">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img
+              src="./media/myPicture.jpg"
+              alt="Image"
+              class="img-fluid rounded-circle"
+            />
+          </div>
+          <div class="col-lg-5 ml-auto card rounded-lg">
+            <div class="card-body">
+              <div class="text-left card-title">
+                <h2>Liran Dekamhi</h2>
+              </div>
+              <p class="card-text aboutMeInfo">
+                Fullstack Developer, currently studying at John Bryce.
+              </p>
+              <p class="card-text blockquote-footer aboutMeInfo">
+                This is the 2nd project as part of my studies. <br />
+                CryptoCurrency Tracker SPA, that relies heavily on jQuery and
+                Ajax (RESTful API).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Container Div -->
+    <div id="containerDiv" class="containerDiv center"></div>
+
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
