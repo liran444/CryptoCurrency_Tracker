@@ -466,6 +466,8 @@ function createCoinElementsObject(coin, moreInfoArray) {
  * @param {Array} moreInfoArray - An array used for caching extra info on clicked coins
  */
 function createMoreInfoButton(coinID, moreInfoArray) {
+  const buttonSelector = `button[id=${coinID}]`;
+
   return $(
     `<button data-toggle='collapse' id=${coinID} data-target='#collapse${coinID}' aria-expanded='false'>`
   )
@@ -474,7 +476,8 @@ function createMoreInfoButton(coinID, moreInfoArray) {
       // On-click function only occurs when the collapsible Div is closed, and the click opens it
       if ($(`#collapse${coinID}`).hasClass("show") === false) {
         onShowMoreInfoClicked(coinID, moreInfoArray);
-      }
+        $(buttonSelector).text("Show Less Info");
+      } else { $(buttonSelector).text("Show More Info"); }
     });
 }
 
