@@ -2,7 +2,7 @@
 
 CryptoCurrency Tracker SPA, that relies heavily on jQuery and Ajax (RESTful API).
 
-### Topics:
+## Topics:
 
 * HTML + CSS
   - New HTML5 tags
@@ -16,10 +16,12 @@ CryptoCurrency Tracker SPA, that relies heavily on jQuery and Ajax (RESTful API)
   - Single Page Application foundations
   - Events
   - Ajax (RESTful API)
+  - CanvasJS
   - Documentation
 * External API’s
 
-### Core Foundations:
+
+## Core Foundations:
 
  1. Toggled Checkboxes' ID are saved and stored in localStorage.
     This is done under the assumption that in the most probable case, if a user wanted to view live reports on a
@@ -29,3 +31,27 @@ CryptoCurrency Tracker SPA, that relies heavily on jQuery and Ajax (RESTful API)
      in a cache array. An imminent clean up of that information will begin right afterwards, deleting the information
      after two minutes.
      Once two minutes have passed, pressing the same show more Info button again will retrieve new information from the API.
+     
+ 3.  You may choose to display up to 5 different coins at once in the live reports graph. 
+
+
+### Main Page:
+
+![mainPage](./mainPage.png)
+
+### Mobile Friendly:
+
+![mobileFriendly1](./mobileFriendly1.png)
+
+### Live Reports / Data Feed on selected coins:
+![liveReportsFeed](./liveReportsFeed.png)
+
+### Examples of Error / Message Handling with Modal:
+
+![modal1](./modal1.png)
+![modal2](./modal2.png)
+![modal3](./modal3.png)
+
+### Example of an Invalid Search for a specific coin:
+![speicifcSearchExample](./speicifcSearchExample.png)
+
