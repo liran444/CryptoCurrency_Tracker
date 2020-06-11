@@ -565,7 +565,7 @@ function limitToggledSwitches(coinID) {
  */
 function saveCheckedIDinLocalStorage(checkBoxID) {
   let checkedIDArray = JSON.parse(localStorage.getItem("Checked IDs"));
-  // Using a set to prevent and duplicates
+  // Using a set to prevent duplicates
   let checkedIDSet = new Set();
 
   if (!checkedIDArray || checkedIDArray.length === 0) {
